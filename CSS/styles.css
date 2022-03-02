@@ -1,0 +1,1025 @@
+@font-face 
+{
+    font-family: 'Raleway';
+    src: url('../font/Raleway/Raleway-VariableFont_wght.ttf');
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Raleway';
+    color: rgb(77, 75, 75);
+}
+
+#container
+{
+    max-width: 1280px;
+    margin: auto;
+}
+
+/* Factorisations */
+
+header, nav ul, #EnglobeLocalisation, #LesFiltres, .EnglobeFiltre, .EnglobeFiltre a, .RondBleu, #Info, #EnglobePictoInfo, #HebergementsPopulaires, 
+#HebergementsM, #PlusPopulaires, #CartesHebergements, #CartesPopulaires, .CartePop, .CartePop a, .FigCartesH, #ActivitesMarseille, 
+.CartesASuperpose, footer 
+{
+    display: flex;
+}
+
+header, #HerbergementsPoplulaires, #CartesHebergements, #CartesPopulaires, .FigCartesH, #ActivitesMarseille, .CartesASuperpose
+{
+    justify-content: space-between;
+}
+
+#LesFiltres, #HebergementsM, #PlusPopulaires, #CartesHebergements, #CartesPopulaires, footer
+{
+    flex-wrap: wrap;
+}
+
+#LesFiltres, .EnglobeFiltre, .EnglobeFiltre a, .RondBleu, #Info, #EnglobePictoInfo
+{
+    align-items: center;
+}
+
+/*  le header - Desktop */
+
+header
+{
+    margin: 30px 40px 0 60px ;
+}
+
+#logo
+{
+    width: 100px;
+}
+
+nav ul
+{
+    list-style-type: none;
+    justify-content: flex-end;
+    margin-top: 10px;
+}
+
+#hebergements a, #activites a
+{
+    color: rgb(77, 75, 75);
+    text-decoration: none;
+    padding: 35px 15px 0 15px;
+}
+
+#hebergements a:hover, #activites a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+#hebergements, #activites
+{
+    padding: 0% 3% 0% 3%;
+}
+
+/* Main - Desktop*/
+
+main
+{
+    margin: 20px 40px 0 40px ;
+}
+
+/*  Trouver la localisation - Desktop */
+
+h1
+{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+#EnglobeLocalisation
+{
+    margin-top: 20px;
+    border: 1px solid #F2F2F2 ;
+    width: 280px;
+    border-radius: 15px;
+}
+
+#pictoLocalisation
+{   
+    float: left;
+    padding: 11px 16px 11px 16px;
+    background-color: #F2F2F2;
+    border-radius: 15px 0px 0px 15px ;
+}
+
+#VilleLocalisation 
+{
+    float: left;
+    background-color: white;
+    color: rgb(77, 75, 75);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    width: 200px;
+}
+
+#RechercherLocalisation
+{
+    border: 1px solid #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    background-color: #0065FC;
+    padding: 12px;
+    margin-left: 0;
+    color: white;
+    cursor: pointer;
+}
+
+
+#RechercherSmartphone
+{
+    border: 1px solid #0065FC;
+    border-radius: 15px 15px 15px 15px;
+    background-color: #0065FC;
+    width: 45px;
+    padding: 12px 16px 12px 16px;
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+
+/*  Filtres - Desktop */
+
+#LesFiltres
+{
+    margin-top: 35px ;
+    color: black;
+    font-weight: bold;
+}
+
+.EnglobeFiltre
+{
+    border: 2px solid #e2e2e2;
+    border-radius: 100px;
+    font-weight: bold;
+    margin: 0 1% 0 1%;
+}
+
+.EnglobeFiltre a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.EnglobeFiltre a:hover
+{
+    border-radius: 100px;
+    background: #DEEBFF;
+}
+
+.RondBleu
+{
+    background: #DEEBFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #0065FC;
+    justify-content: center;
+}
+
+.textefiltre
+{
+    margin: 0 10px 0 10px;
+}
+
+/*  Plus de 500 logements - Desktop */
+
+#Info
+{
+    margin: 50px 0 50px 0;
+}
+
+#EnglobePictoInfo
+{
+    border: 1px solid #e2e2e2;
+    border-radius: 100px;
+    padding: 7px 10px 7px 10px;
+    justify-content: center;
+    color: #0065FC;
+    font-size: 12px;
+    margin-right: 10px;
+}
+
+/*  Articles Hébergement à Marseille et Les plus populaires - Desktop */
+
+#HebergementsM
+{
+    border-radius: 20px;
+    background-color: #F2F2F2;
+    width: 65%;
+    margin-right: 3%;
+}
+
+#PlusPopulaires
+{
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 32%;
+}
+
+.LiensCartesHebergements, .LiensCartesPopulaires, .LiensCartesActivites
+{
+    color: black;
+    text-decoration: none;
+}
+
+.LiensCartesHebergements:hover, .LiensCartesHebergements:hover h3, .LiensCartesPopulaires:hover, 
+.LiensCartesPopulaires:hover h3, .LiensCartesActivites:hover, .LiensCartesActivites:hover h3
+{
+    color: #0065FC;
+    text-decoration: none;
+}
+
+#HebergementsM h2
+{
+    font-weight: bold;
+    color: black;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#PlusPopulaires h2
+{
+    font-weight: bold;
+    color: black;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+    
+#pictoPop
+{
+    font-size: x-large;
+    margin-right: 30px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-bottom: auto;
+}
+
+/*  Sections des cartes Hébergement à Marseille et Les plus populaires - Desktop */
+
+#CartesHebergements
+{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+#CartesPopulaires
+{
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+/*  Cartes Hébergement à Marseille et Les plus populaires - Desktop */
+
+.CarteH
+{
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+    height: 95%;
+    box-shadow : 3px 3px 15px #d6d6d6;
+}
+
+.LiensCartesHebergements
+{
+    width: 30%;
+    margin-bottom: 3%;
+}
+
+.photoH
+{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+#plus
+{
+    font-weight: bold;
+    color: black;
+    margin: 10px 0 30px 40px;
+}
+
+.LiensCartesPopulaires
+{
+    width: 100%;
+}
+
+.CartePop
+{
+    border: 5px solid white;
+    border-radius: 20px;
+    background-color: white;
+    height: 120px;
+    box-shadow : 3px 3px 15px #d6d6d6;
+    margin-bottom: 10px;
+}
+
+.CartePop a
+{
+    height: 120px;
+}
+
+.photoPop
+{
+    border-radius: 20px 0px 0px 20px;
+    width: 40%;
+    object-fit: cover;
+}
+
+/*  Figcaptions des cartes Hébergement à Marseille et Les plus populaires - Desktop */
+
+.FigCartesH
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    line-height: 20px;
+    flex-direction: column;
+}
+
+.FigCartesPop
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 55%;
+    line-height: 20px;
+}
+
+figcaption h3
+{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold; 
+    color: black;
+}
+
+.FigCartesPop .pictoEtoile
+{
+    margin-top: 11%
+}
+
+figcaption p
+{
+   font-size: 12px;
+}
+
+.LienCartes
+{
+    text-decoration: none;
+    color: black;
+}
+
+.pictoEtoile
+{
+    color: #0065FC;
+    font-size: x-small;
+}
+
+.gris
+{
+    color: #d6d6d6;
+}
+
+/* Activités à Marseille - Desktop */
+
+#activitesM
+{
+    font-weight: bold;
+    color: black;
+    font-size: 20px;
+    margin: 40px 0px 30px 0px;
+}
+
+.LiensCartesActivites
+{
+    margin-right: 20px;
+}
+
+.CartesASuperpose
+{
+    flex-direction: column;
+    width: 280px;
+}
+
+.CarteA
+{   
+    border-radius: 20px;
+    background-color: white;
+    width: 100%;
+    box-shadow : 3px 3px 15px #d6d6d6;
+}
+
+.PortCalanques
+{
+    max-width: 260px;
+    height: 100%;
+}
+
+.photoALongues
+{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+}
+
+.photoACourtes
+{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.FigCartesA
+{
+    padding: 0 10px 20px 20px;
+}
+
+/* Footer - Desktop */
+
+footer
+{
+    background-color: #F2F2F2;
+    margin-top: 50px;
+    justify-content: flex-start;
+    padding: 0 40px 0 40px;
+}
+
+.Apropos h4
+{
+    font-weight: bold;
+    color: black;
+    padding: 50px 0px 20px 0px;
+}
+
+.Apropos p
+{
+    margin-bottom: 7px;
+}
+
+.Apropos 
+{
+    margin-bottom:  40px;
+    margin-right: 13%;
+}
+
+/* Sur tablette - Tablette */
+
+@media screen and (max-width: 992px)
+{  
+    #container
+    {
+        margin: 0;
+    }
+
+    /*  le header - Tablette  */
+
+    header
+    {
+        flex-direction: column;
+        margin: 20px 0 0 0;
+    }
+
+    #LogoBooki
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    #logo
+    {
+        margin-top: 0;
+    }
+
+    nav 
+    {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+
+    ul
+    {
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul
+    {
+        display: table;
+    }
+
+    li 
+    {
+        border-bottom: 3px solid #F2F2F2;
+        width: 50%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+    }
+
+    li:hover
+    {
+        border-bottom: 3px solid #0065FC;
+        border-top: none;
+        padding-bottom: 10px;
+    }
+
+    #hebergements, #activites
+    {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    #hebergements a
+    {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    #hebergements a:hover
+    {
+        border-top: none;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+    
+    #activites a
+    {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    #activites a:hover
+    {
+        border-top: none;
+        padding-bottom: 10px;
+        margin: 0;
+    }
+
+    /* Main - Tablette  */
+
+    main
+    {
+        margin: 0;
+    }
+
+    /* Localisation - Tablette  */
+
+    #Localisation
+    {
+        margin: 0 0 0 10%
+    }
+
+    #pictoLocalisation
+    {
+        padding: 12px 16px 12px 16px;
+    }
+
+    #RechercherSmartphone
+    {
+        display: block;
+    }
+
+    #RechercherLocalisation
+    {
+        display: none;
+    }
+   
+    /* Les Filtres - Tablette  */
+
+    #LesFiltres
+    {
+        margin-right: 10%;
+    }
+
+    #TitreFiltres
+    {
+        margin-right: 1000px;
+        margin-bottom: 15px;
+    }
+
+   .EnglobeFiltre
+    {
+        margin-bottom: 15px;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+
+    /* 500 logements - Tablette  */
+
+    #Info
+    {
+        margin: 20px 0 40px 0;
+    }
+
+    /* Les plus populaires - Tablette  */
+
+    #HebergementsPopulaires
+    {
+        flex-direction: column-reverse;
+    }
+
+    #PlusPopulaires
+    {
+        border-radius: 0px;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .LiensCartesPopulaires
+    {
+        width: 45%;
+    }
+
+    #PlusPopulaires h2
+    {
+       margin-left: 10%;
+       margin-bottom: 30px;
+    }
+
+    #pictoPop
+    {
+        margin-right: 11%;
+    }
+
+    #CartesPopulaires
+    {
+        margin-left: 8%;
+        margin-right: 10%;
+        justify-content: space-around;
+    }
+
+    .CartePop
+    {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .FigCartesPop
+    {
+        line-height: 20px;
+    }
+
+    /* Hébergement à Marseille  - Tablette */
+
+     #HebergementsM
+    {
+        background: white;
+        width: 100%; 
+    }
+
+    #HebergementsM h2
+    {
+        margin-left: 10%;
+        margin-bottom: 40px;
+    }
+    
+    #CartesHebergements
+    {
+        margin:0 5% 0 5%;
+        justify-content: space-around;
+    }
+
+    .LiensCartesHebergements
+    {
+        width: 40%;
+    }
+
+    .CarteH
+    {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+     .photoH
+    {
+        width: 100%;
+    }
+
+    #plus
+    {
+        margin-left: 10%;
+    }
+
+    /* Activités à Marseille - Tablette */
+
+    #activitesM
+    {
+        margin-left: 10%;
+        margin-bottom: 40px;
+    }
+
+    #ActivitesMarseille
+    {
+        margin-left: 10%;
+        margin-right: 10%;
+        flex-wrap: wrap;
+    }
+
+    .LiensCartesActivites
+    {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .CartesASuperpose
+    {
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 40px;
+        margin-top: 40px;
+    }
+
+    .LiensPetiteCarteA
+    {
+        margin-right: 40px;
+    }
+
+    .CarteA
+    {   
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .photoALongues
+    {
+        max-width: none;
+        height: 240px;
+    }
+
+    .photoACourtes
+    {
+        height: 240px;
+    }
+
+    /* Footer  - Tablette */
+
+    footer 
+    {
+        padding-left: 10%;
+        padding-right: 10%;
+        justify-content: space-between;
+    }
+    
+    .Apropos p
+    {
+        line-height: 30px;
+    }
+
+    .Apropos 
+    {
+        margin: 0;
+    }
+
+}
+
+/* Sur Smartphone */
+
+@media screen and (max-width: 768px)
+{ 
+    /* Factorisations */
+
+    #CartesPopulaires, .CarteA, .CartesASuperpose, footer 
+    {
+        flex-direction: column;
+    }
+
+    /*  le header - Smartphone */
+
+    header
+    {
+        margin: 20px 0 0 0;
+    }
+
+    /* Localisation - Smartphone */
+
+    #Localisation
+    {
+        margin: 0 5% 0 5%;
+    }
+
+    #EnglobeLocalisation
+    {
+        margin: 20px 0 20px 0;
+    }
+
+    /* Les Filtres - Smartphone */
+
+    #TitreFiltres
+    {
+        margin-right: 1000px;
+        margin-bottom: 15px;
+    }
+
+    .EnglobeFiltre
+    {
+        margin-bottom: 15px;
+        margin-right: 10px;
+        margin-left: 0;
+    }
+    
+    /* 500 logements - Smartphone */
+
+    #Info
+    {
+        margin: 20px 0 40px 0;
+    }
+
+    /* Les plus populaires - Smartphone */
+
+    #HebergementsPopulaires
+    {
+        flex-direction: column-reverse;
+    }
+
+    #PlusPopulaires
+    {
+        flex-wrap: wrap;
+        padding: 0;
+    }
+
+    #PlusPopulaires h2
+    {
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-bottom: 10px;
+    }
+
+    #pictoPop
+    {
+        color: black;
+        margin-right: 5%;
+        margin-top: 10%;
+    }
+
+    #CartesPopulaires
+    {
+        margin: 0 7% 10% 5%;
+        padding: 0;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .LiensCartesPopulaires
+    {
+        width: 100%;
+    }
+
+    .CartePop
+    {
+        width: 100%;
+    }
+
+    .FigCartesPop
+    {
+        line-height: 20px;
+    }
+
+    .FigCartesPop .pictoEtoile 
+    {
+        margin-top: 15%;
+    }
+
+    /* Hébergement à Marseille - Smartphone */
+
+    #HebergementsM
+    {
+        flex-wrap: wrap;
+    }
+
+    #HebergementsM h2
+    {
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+     
+    #CartesHebergements
+    {
+        margin: 0 7% 10% 5%;
+        padding: 0;
+    }
+
+    .LiensCartesHebergements 
+    {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .CarteH
+    {
+        width: 100%;;
+    }
+
+     .photoH
+    {
+        width: 100%;
+    }
+
+    #plus
+    {
+        margin-bottom: 20px;
+        margin-left: 5%;
+    }
+
+    .FigCartesH
+    {
+        height: 55px;
+    }
+    
+    /* Activités à Marseille - Smartphone */
+
+    #activitesM
+    {
+        margin-left: 5%;
+        margin-bottom: 30px;
+    }
+
+    #ActivitesMarseille
+    {
+        margin-left: 5%;
+        margin-right: 6%;
+    }
+
+    .CarteA
+    {
+        display: flex;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .CartesASuperpose 
+    {
+        width: 100%;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+   .LiensCartesActivites
+    {
+       margin-bottom: 5%;
+    }
+
+    .CartesASuperpose .CarteA
+    {
+        max-width: none;
+    }
+
+    .photoALongues
+    {
+        height: 150px;
+    }
+
+    .photoACourtes
+    {
+        height: 150px;
+    }
+
+    /* Footer - Smartphone */
+
+    footer 
+    {
+        padding: 0;
+    }
+
+    .Apropos
+    {
+        margin-left: 5%;
+    }
+
+    .Apropos h4
+    {
+        padding: 50px 0px 20px 0px;
+    }
+
+    .Apropos p
+    {
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+}
+
+
